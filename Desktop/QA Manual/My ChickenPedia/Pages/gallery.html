@@ -3,48 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Галерея — Курочкопедія</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Навігація по сайту -->
+    <nav class="main-nav">
+        <p>
+            <a href="index.html">Головна</a> | 
+            <a href="gallery.html">Галерея</a> | 
+            <a href="contact.html">Контакти</a>
+        </p>
+    </nav>
+
     <!-- Шапка сторінки -->
-    <header>
+    <header class="site-header">
         <h1>Галерея</h1>
-        <p>Схеми вишивки та мозаїки</p>
+        <p class="subtitle">Схеми вишивки та мозаїки</p>
     </header>
 
-    <hr>
-
     <!-- Основний контент -->
-    <main>
-        <p>Виготовляйте з задоволенням:</p>
-        
-      <p>
-            <img src="Gallery/11.jpg" alt="Схема вишивки жовта курка" width="500">
-        </p>
-
-        <p>
-            <img src="Gallery/12.jpg" alt="Схема вишивки дві курочки" width="500">
-        </p>
-
-        <p>
-            <img src="Gallery/13.jpg" alt="Схема мозаїки товста курочка" width="500">
-        </p>
-
-        <p>
-            <img src="Gallery/14.jpg" alt="Схема біла курочка" width="500">
-        </p>
-
-        <p>
-           <img src="Gallery/15.jpg" alt="Схема мозаїки біла та коричнева курочка" width="500">
-        </p>
+    <main class="main-content">
+        <section class="content-section">
+            <h2>Колекція схем</h2>
+            <p>Виготовляйте з задоволенням:</p>
+            
+            <!-- Блок сітки галереї (по 2 картинки в рядок) -->
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="Gallery/11.jpg" alt="Схема вишивки жовта курка" class="pixel-img">
+                </div>
+                <div class="gallery-card">
+                    <img src="Gallery/12.jpg" alt="Схема вишивки дві курочки" class="pixel-img">
+                </div>
+                <div class="gallery-card">
+                    <img src="Gallery/13.jpg" alt="Схема мозаїки товста курочка" class="pixel-img">
+                </div>
+                <div class="gallery-card">
+                    <img src="Gallery/14.jpg" alt="Схема біла курочка" class="pixel-img">
+                </div>
+                <div class="gallery-card">
+                    <img src="Gallery/15.jpg" alt="Схема мозаїки біла та коричнева курочка" class="pixel-img">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <hr>
-
-    <!-- Посилання назад -->
-<footer>
-    <p><a href="index.html">← Повернутися на головну</a></p>
-</footer>
+    <!-- Підвал сторінки -->
+    <footer class="site-footer">
+        <p><a href="index.html">← Повернутися на головну</a></p>
+    </footer>
 
 </body>
 </html>
